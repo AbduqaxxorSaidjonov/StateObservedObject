@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7654825B27F84E1D00214E9E /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7654825A27F84E1D00214E9E /* SecondScreen.swift */; };
 		76D2263E27F84372009E4575 /* StateObservedObjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2263D27F84372009E4575 /* StateObservedObjectApp.swift */; };
-		76D2264027F84372009E4575 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2263F27F84372009E4575 /* ContentView.swift */; };
 		76D2264227F84373009E4575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D2264127F84373009E4575 /* Assets.xcassets */; };
 		76D2264527F84373009E4575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D2264427F84373009E4575 /* Preview Assets.xcassets */; };
 		76D2264727F84373009E4575 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2264627F84373009E4575 /* Persistence.swift */; };
 		76D2264A27F84373009E4575 /* StateObservedObject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76D2264827F84373009E4575 /* StateObservedObject.xcdatamodeld */; };
+		76D2265527F843E1009E4575 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2265427F843E1009E4575 /* MainScreen.swift */; };
+		76D2265827F84484009E4575 /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2265727F84484009E4575 /* UserSettings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7654825A27F84E1D00214E9E /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
 		76D2263A27F84372009E4575 /* StateObservedObject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateObservedObject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2263D27F84372009E4575 /* StateObservedObjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateObservedObjectApp.swift; sourceTree = "<group>"; };
-		76D2263F27F84372009E4575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76D2264127F84373009E4575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D2264427F84373009E4575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76D2264627F84373009E4575 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		76D2264927F84373009E4575 /* StateObservedObject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = StateObservedObject.xcdatamodel; sourceTree = "<group>"; };
+		76D2265427F843E1009E4575 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		76D2265727F84484009E4575 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,10 @@
 		76D2263C27F84372009E4575 /* StateObservedObject */ = {
 			isa = PBXGroup;
 			children = (
+				76D2265627F84454009E4575 /* methods */,
+				76D2265127F843B9009E4575 /* screens */,
+				76D2265027F84392009E4575 /* apputils */,
 				76D2263D27F84372009E4575 /* StateObservedObjectApp.swift */,
-				76D2263F27F84372009E4575 /* ContentView.swift */,
-				76D2264127F84373009E4575 /* Assets.xcassets */,
-				76D2264627F84373009E4575 /* Persistence.swift */,
-				76D2264827F84373009E4575 /* StateObservedObject.xcdatamodeld */,
 				76D2264327F84373009E4575 /* Preview Content */,
 			);
 			path = StateObservedObject;
@@ -71,6 +74,33 @@
 				76D2264427F84373009E4575 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76D2265027F84392009E4575 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				76D2264627F84373009E4575 /* Persistence.swift */,
+				76D2264127F84373009E4575 /* Assets.xcassets */,
+				76D2264827F84373009E4575 /* StateObservedObject.xcdatamodeld */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		76D2265127F843B9009E4575 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				76D2265427F843E1009E4575 /* MainScreen.swift */,
+				7654825A27F84E1D00214E9E /* SecondScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		76D2265627F84454009E4575 /* methods */ = {
+			isa = PBXGroup;
+			children = (
+				76D2265727F84484009E4575 /* UserSettings.swift */,
+			);
+			path = methods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D2265527F843E1009E4575 /* MainScreen.swift in Sources */,
 				76D2264A27F84373009E4575 /* StateObservedObject.xcdatamodeld in Sources */,
 				76D2264727F84373009E4575 /* Persistence.swift in Sources */,
-				76D2264027F84372009E4575 /* ContentView.swift in Sources */,
+				76D2265827F84484009E4575 /* UserSettings.swift in Sources */,
 				76D2263E27F84372009E4575 /* StateObservedObjectApp.swift in Sources */,
+				7654825B27F84E1D00214E9E /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,7 +13,7 @@ struct StateObservedObjectApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+           MainScreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
